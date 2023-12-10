@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Analyze">
+
+    <TextView
+        android:id="@+id/currentDate"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="70dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/breakoutput"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.52" />
+
+    <TextView
+        android:id="@+id/BreakfastExpense"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="40dp"
+        android:text="@string/breakfast"
+        app:layout_constraintBottom_toTopOf="@+id/LunchExpense"
+        app:layout_constraintEnd_toStartOf="@+id/breakoutput"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/currentDate" />
+
+    <TextView
+        android:id="@+id/breakoutput"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="40dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/lunchoutput"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/BreakfastExpense"
+        app:layout_constraintTop_toBottomOf="@+id/currentDate" />
+
+    <TextView
+        android:id="@+id/LunchExpense"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="33dp"
+        android:text="@string/lunch"
+        app:layout_constraintBottom_toTopOf="@+id/DinnerExpense"
+        app:layout_constraintEnd_toStartOf="@+id/lunchoutput"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BreakfastExpense" />
+
+    <TextView
+        android:id="@+id/lunchoutput"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="33dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/dinneroutput"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/LunchExpense"
+        app:layout_constraintTop_toBottomOf="@+id/breakoutput" />
+
+    <TextView
+        android:id="@+id/DinnerExpense"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="43dp"
+        android:text="@string/dinner"
+        app:layout_constraintBottom_toTopOf="@+id/DrinkExpense"
+        app:layout_constraintEnd_toStartOf="@+id/dinneroutput"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LunchExpense" />
+
+    <TextView
+        android:id="@+id/dinneroutput"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="43dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/drinkoutput"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/DinnerExpense"
+        app:layout_constraintTop_toBottomOf="@+id/lunchoutput" />
+
+    <TextView
+        android:id="@+id/DrinkExpense"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="95dp"
+        android:text="@string/drink"
+        app:layout_constraintBottom_toTopOf="@+id/TotalKcal"
+        app:layout_constraintEnd_toStartOf="@+id/drinkoutput"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DinnerExpense" />
+
+    <TextView
+        android:id="@+id/drinkoutput"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="308dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/DrinkExpense"
+        app:layout_constraintTop_toBottomOf="@+id/dinneroutput" />
+
+    <TextView
+        android:id="@+id/TotalKcal"
+        android:layout_width="250dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="123dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DrinkExpense" />
+</androidx.constraintlayout.widget.ConstraintLayout>

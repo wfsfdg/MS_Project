@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">MsProject</string>
+    <string name="input_button">식사 입력</string>
+    <string name="output_button">식사 출력</string>
+    <string name="analysis_button">식사 분석</string>
+    <string name="select_date">날짜 선택</string>
+    <string name="next_button">다음</string>
+    <string name="location">위치</string>
+    <string name="price">가격(원)</string>
+    <string name="calorie">열량</string>
+    <string name="menu">메뉴</string>
+    <string name="give_review">평가를 남겨주세요</string>
+    <string name="input">입력</string>
+    <string name="type">종류</string>
+    <string name="choose_loc">위치를 선택하세요</string>
+    <string name="choose_type">종류를 선택하세요</string>
+    <string name="upload_pic">사진 업로드</string>
+    <string name="save">저장</string>
+    <string name="file_select">선택</string>
+    <string name="breakfast">최근 30일동안 조식 비용</string>
+    <string name="lunch">최근 30일동안 중식 비용</string>
+    <string name="dinner">최근 30일동안 석식 비용</string>
+    <string name="drink">최근 30일동안 음료 비용</string>
+
+</resources>
