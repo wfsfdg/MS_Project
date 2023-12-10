@@ -4,26 +4,34 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/cloud"
     tools:context=".MainActivity">
 
     <Button
         android:id="@+id/buttonIn"
         android:layout_width="200dp"
         android:layout_height="0dp"
-        android:layout_marginTop="182dp"
-        android:layout_marginBottom="55dp"
+        android:layout_marginBottom="37dp"
+        android:alpha="0.5"
+        android:backgroundTint="#FFFAFA"
+        android:focusableInTouchMode="true"
         android:text="@string/input_button"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toTopOf="@+id/buttonOut"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <Button
         android:id="@+id/buttonOut"
         android:layout_width="200dp"
         android:layout_height="0dp"
-        android:layout_marginBottom="52dp"
+        android:layout_marginBottom="30dp"
+        android:alpha="0.5"
+        android:backgroundTint="#FFFAFA"
+        android:focusableInTouchMode="true"
         android:text="@string/output_button"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toTopOf="@+id/buttonAn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -33,10 +41,31 @@
         android:id="@+id/buttonAn"
         android:layout_width="200dp"
         android:layout_height="0dp"
-        android:layout_marginBottom="262dp"
+        android:layout_marginBottom="46dp"
+        android:alpha="0.5"
+        android:backgroundTint="#FFFAFA"
+        android:focusableInTouchMode="true"
         android:text="@string/analysis_button"
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/white"
+        android:textColorLink="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonOut" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="265dp"
+        android:layout_height="204dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="96dp"
+        android:alpha="0.8"
+        app:layout_constraintBottom_toTopOf="@+id/buttonIn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/symbol_02" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
